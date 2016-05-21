@@ -34,7 +34,7 @@ gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'devise'
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
-
+gem 'masonry-rails', '~> 0.2.4'
 
 
 # Use Capistrano for deployment
