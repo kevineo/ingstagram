@@ -19,6 +19,7 @@
 
 body {
 	background: #E9E9E9;
+	background-image: url("http://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2015%2F0920%2Fsoc_g_ings222_cr__1296x729.jpg");
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,6 +29,9 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
+.photo-container {
+	opacity: 0.7;
+}
 
 
 nav {
@@ -57,6 +61,7 @@ nav {
 	  box-shadow: 0 1px 2px 0 rgba(82,158,204, 0.48);
 	  border-radius: 2px;
 	  text-align: center;
+
 	  img {
 	  	max-width: 100%;
 	  	height: auto;
@@ -86,6 +91,7 @@ nav {
 
 #pic_show {
 	.panel-heading {
+		opacity: 0.5;
 		padding: 0;
 	}
 	.pic_image {
@@ -98,9 +104,10 @@ nav {
 	}
 	.panel-body {
 		padding: 35px;
+		opacity: 0.5;
 		h1 {
 			margin: 0 0 10px 0;
-			color: #529ECC;
+			color: #ffffff;
 			font-weight: bold;
 		}
 		.description {

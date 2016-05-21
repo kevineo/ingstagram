@@ -1,11 +1,17 @@
-%h1= @picture.title
-%p= @picture.description
-%p
-Picture by:
-= @picture.user.email
+.photo-container
+	.col-md-8.col-md-offset-2
+		.row
+			.panel.panel-default
+				.panel-heading	
+					= image_tag @picture.image.url		
+					%h1= @picture.title
+					%p= @picture.description
+					%p
+					Picture by:
+					= @picture.user.email
 
-%br
+					%br
 
-= link_to 'Back', root_path
-= link_to 'Edit', edit_picture_path
-= link_to 'Delete', picture_path, method: :delete, data: { confirm: "Are you sure?" } 
+					= link_to 'Back', root_path
+					= link_to 'Edit', edit_picture_path
+					= link_to 'Delete', picture_path, method: :delete, data: { confirm: "Are you sure?" } 
