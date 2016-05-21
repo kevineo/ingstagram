@@ -9,12 +9,11 @@ class PicturesController < ApplicationController
 	end
 
 	def new
-		@picture = Picture.new
+		@picture = current_user.pictures.build
 	end
 
 	def create
-		@picture = Picture.new(picture_params)
-
+		@picture = current_user.pictures.build(picture_params)
 		if @picture.save
 			redirect_to @picture, notice: "Success!"
 		else
@@ -47,5 +46,4 @@ class PicturesController < ApplicationController
 	def find_picture
 		@picture = Picture.find(params[:id])
 	end
-
 end
